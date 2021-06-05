@@ -3560,9 +3560,9 @@ electron-devtools-installer@^3.1.1:
     semver "^7.2.1"
     unzip-crx-3 "^0.2.0"
 
-electron-overlay-window@hsource/electron-overlay-window#v2.0.1-macos.1:
-  version "2.0.1-macos.1"
-  resolved "https://codeload.github.com/hsource/electron-overlay-window/tar.gz/fd8db2f768eee94127298947af5750990afa5b15"
+electron-overlay-window@hsource/electron-overlay-window#v2.0.1-macos.3:
+  version "2.0.1-macos.3"
+  resolved "https://codeload.github.com/hsource/electron-overlay-window/tar.gz/f546c84f7a599ccfcbfea80a6271ff78551930ad"
   dependencies:
     node-gyp-build "4.x.x"
     throttle-debounce "3.x.x"

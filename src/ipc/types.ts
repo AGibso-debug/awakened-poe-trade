@@ -102,9 +102,7 @@ export const defaultConfig: Config = {
     send: true
   }],
   clientLog: null,
-  // We enable this everywhere except on Mac: shortcuts registered through
-  // `globalShortcuts` don't seem to work there
-  useOsGlobalShortcut: process.platform !== 'darwin',
+  useOsGlobalShortcut: true,
   windowTitle: 'Path of Exile',
   logLevel: 'warn',
   showSeller: false,
