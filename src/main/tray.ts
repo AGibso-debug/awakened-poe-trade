@@ -46,6 +46,8 @@ export function createTray () {
     // Mac image size needs to be smaller, or else it looks huge. Size
     // guideline is from https://iconhandbook.co.uk/reference/chart/osx/
     trayImage = trayImage.resize({ width: 22, height: 22 })
+    // Hide the app in the dock as soon as the tray icon is active
+    app.dock.hide()
   }
   tray = new Tray(trayImage)
 
