@@ -24,22 +24,22 @@ export function typeInChat (text: string, send: boolean) {
   if (text.startsWith(PLACEHOLDER_LAST)) {
     text = text.substr(`${PLACEHOLDER_LAST} `.length)
     clipboard.writeText(text)
-    robotjs.keyTap('Enter', modifiers)
+    robotjs.keyTap('Enter', ['command'])
   } else if (text.endsWith(PLACEHOLDER_LAST)) {
     text = text.slice(0, -PLACEHOLDER_LAST.length)
     clipboard.writeText(text)
-    robotjs.keyTap('Enter', modifiers)
+    robotjs.keyTap('Enter', ['command'])
     robotjs.keyTap('Home')
     robotjs.keyTap('Delete')
   } else {
     clipboard.writeText(text)
     robotjs.keyTap('Enter')
     if (!AUTO_CLEAR.includes(text[0])) {
-      robotjs.keyTap('A', modifiers)
+      robotjs.keyTap('A', ['command'])
     }
   }
 
-  robotjs.keyTap('V', modifiers)
+  robotjs.keyTap('V', ['command'])
 
   if (send) {
     robotjs.keyTap('Enter')
